@@ -8,7 +8,7 @@ SECRET_KEY = settings.SECRET_KEY
 
 
 class Command(BaseCommand):
-    help = 'Create user | python manage.py createuser "email" "password"'
+    help = 'Create user | python manage.py createuser "email" "name" "password"'
 
     def add_arguments(self, parser):
         parser.add_argument('email', type=str, help='User email')
