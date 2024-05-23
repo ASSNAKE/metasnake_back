@@ -23,5 +23,5 @@ class Upload(APIView):
                 'state': 'error',
                 'message': 'Something went wrong',
                 'details': {'message': str(e)},
-                'instance': request.instance,
+                'instance': request.path,
             }, ensure_ascii=False), status=404)
